@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Required Meta Tags-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+        <!--JQuery Stylesheet-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <!--JQuery bootstrap stylesheet-->   
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <!--Main Stylesheet-->
+        <link rel="stylesheet" href="style.css"> 
+        
+        <!--Icon Library-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        
+        <!--Calendly Link & Stylesheet-->
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    </head>
+
+    <body>
+        <!-- NAVIGATION -->
+          <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <!--LOGO inserted here-->
+              <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="mpower_logo">
+              </a>
+
+              <!--Navbar toggle button collapsable menu: When screen shrinks the navbar collapses, toggle button appears for dropdown menu-->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <!--Navigation Bar-->
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">                                                                                                                
+                    <a class="nav-link active" aria-current="page" href="index.html"> Home </a>
+                  </li>
+                  <li class="nav-item">                                             
+                    <a class="nav-link active" aria-current="page" href="about.html"> About Us </a>
+                  </li>
+                  <li class="nav-item">                                          
+                    <a class="nav-link active" aria-current="page"  href="Services.html"> Services </a>
+                  </li>
+                  <li class="nav-item">                                                
+                    <a class="nav-link active" aria-current="page" href="contact.html"> Contact Us</a>
+                  </li>
+                </ul>
+
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    
+                    <a href="" class="cta-button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/teamfivetest123'});return false;">
+                      Schedule a Call
+                    </a>
+                      <!--<a class="nav-link active" aria-current="page" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/teamfivetest123'});return false;"> Schedule a Call </a>-->
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <script>
+            /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+              var currentScrollPos = window.pageYOffset;
+              if (prevScrollpos > currentScrollPos) {
+                document.getElementById("mainNav").style.top = "0";
+              } else {
+                document.getElementById("mainNav").style.top = "-50px";
+              }
+              prevScrollpos = currentScrollPos;
+            }
+          </script>
+          
+
+        <!-- MASTER HEADER -->
+          <header id="service-banner" class="otherPage-banners">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 text-lg-start"><h3 id="hero-subheading">Services</h3></div>
+              </div>
+            </div>
+          </header>
+        
+
+
+       <!-- SERVICES -->
+<section class="container-fluid page-section kiwi-container" id="kiwi-section">
+  <div class="container kiwi-container">
+    <div class="row">
+      <div class="col-md-4 col-sm-4">
+        <div class="kiwi text-center cloud">
+          <img class="center" src="images/cloud-icon.png" alt="Cloud Computing Icon" class="img-fluid">
+          <h4 class="kiwi-title-cloud">Cloud</h4>
+          <p class="kiwi-description-cloud">We provide a wide range of cloud services and solutions that drive digital transformation and increase organizational speed and agility. Combining advanced technical skills and leading solutions with deep business, industry- and domain-specific experience, we can help you accelerate your transformation in the cloud.</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4">
+        <div class="kiwi text-center intelligent">
+          <img class="center" src="images/automation-icon.png" alt="AI Icon" class="img-fluid">
+          <h4 class="kiwi-title-intelligent">Intelligent Automation</h4>
+          <p class="kiwi-description-intelligent">Fueled by data, human-centered design, and business purpose, automation does more than mechanize. It can execute decisions, power outcomes, smooth customer experiences, and spark loyalty. Just as important, intelligent automation solutions free your people to invent and innovate—helping you excel and stay ahead in an ever-changing world.</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4">
+        <div class="kiwi text-center application">
+          <img class="center" src="images/Internet-icon.svg" alt="Web Design Icon" class="img-fluid">
+          <h4 class="kiwi-title-application">Application Modernization & Migration</h4>
+          <p class="kiwi-description-application">Reimagine and rearchitect your business and IT functions with an accelerated, efficient approach to transform legacy applications. Unlock the full potential of your digital landscape by seamlessly migrating to modern platforms, enhancing agility, and optimizing performance.</p>
+        </div>
+      </div>
+      <!-- Add three more kiwis in a similar manner -->
+      <!-- Kiwi 4 -->
+      <div class="col-md-4 col-sm-4">
+        <div class="kiwi text-center management">
+          <img class="center" src="images/management.png" alt="Kiwi 4 Icon" class="img-fluid">
+          <h4 class="kiwi-title-management">Management Consulting</h4>
+          <p class="kiwi-description-management">Our experts evaluate the crucial elements of your business and technology environment to provide you with the tools needed to make the right decisions. From business transformation to process improvement, we have the capability and insight to deliver tangible results.</p>
+        </div>
+      </div>
+      <!-- Kiwi 5 -->
+      <div class="col-md-4 col-sm-4">
+        <div class="kiwi text-center business">
+          <img class="center" src="images/analytics.png" alt="Kiwi 5 Icon" class="img-fluid">
+          <h4 class="kiwi-title-business">Business Intelligence & Analytics</h4>
+          <p class="kiwi-description-business">Our practitioners will implement Business Intelligence and Analytics solutions using an integrated framework to create data-centered solutions that help drive informed decision making. Summit Technologies specializes in helping organizations visualize how their data can be used to improve outcomes. Using business intelligence tools, we can deliver analytic solutions that result in actionable, understandable data that can be used to optimize business performance, streamline business operations, reduce workloads, and improve productivity.</p>
+        </div>
+      </div>
+      <!-- Kiwi 6 -->
+      <div class="col-md-4 col-sm-4">
+        <div class="kiwi text-center cyber">
+          <img class="center" src="images/lock-icon.svg" alt="Kiwi 6 Icon" class="img-fluid">
+          <h4 class="kiwi-title-cyber">Cyber Security</h4>
+          <p class="kiwi-description-cyber">The security of your network infrastructure is crucial to business operations. Our team of cleared cybersecurity professionals offers a comprehensive suite of technology solutions to improve the security posture of your organization.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Add this script at the end of your HTML body or in the head section -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    adjustKiwisHeights();
+  });
+
+  window.addEventListener("resize", function () {
+    adjustKiwisHeights();
+  });
+
+  function adjustKiwisHeights() {
+    // Get all kiwi elements
+    const kiwis = document.querySelectorAll(".kiwi");
+
+    // Reset heights to auto to recalculate based on content
+    kiwis.forEach(function (kiwi) {
+      kiwi.style.height = "auto";
+    });
+
+    // Get the maximum height among all kiwis
+    const maxHeight = Math.max(
+      ...Array.from(kiwis).map((kiwi) => kiwi.offsetHeight)
+    );
+
+    // Set the height of all kiwis to the maximum height
+    kiwis.forEach(function (kiwi) {
+      kiwi.style.height = maxHeight + "px";
+    });
+  }
+</script>
+
+<!--ChatBot-->
+                <!--style for chatbot to be inserted-->
+                <!--style="height: 100%; min-height: 700px"   frameborder="0"-->
+                
+                <div id="chatbotFrameContainer">
+                  <iframe id="chatbotFrame"></iframe>
+                </div>
+                
+                <script>
+                    var iframe = document.getElementById('chatbotFrame');
+                    var doc = iframe.contentWindow || iframe.contentDocument;
+                    if (doc.document) doc = doc.document;
+                
+                    var script1 = doc.createElement('script');
+                    script1.text = 'window.embeddedChatbotConfig = { chatbotId: "un2F54wWMBH8v3yvgjnUj", domain: "www.chatbase.co" }';
+                    doc.body.appendChild(script1);
+                
+                    var script2 = doc.createElement('script');
+                    script2.src = "https://www.chatbase.co/embed.min.js";
+                    script2.setAttribute("chatbotId", "un2F54wWMBH8v3yvgjnUj");
+                    script2.setAttribute("domain", "www.chatbase.co");
+                    script2.defer = true;
+                    doc.body.appendChild(script2);
+                </script>
+                
+                          
+                      <!--<a href="chatbot.html">chatbotlink</a>-->
+
+
+
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+
+          <div class="container p-4">
+            <!-- Section: Social media-->
+            <div>
+              <!-- Facebook -->
+              <a
+                class="btn text-white btn-lg btn-floating"
+                style="background-color: #3b5998;"
+                href="#"
+                role="button"
+                ><i class="fa fa-facebook"></i
+              ></a>
+
+              <!-- Twitter -->
+              <a
+                class="btn text-white btn-lg btn-floating"
+                style="background-color: #55acee;"
+                href="#"
+                role="button"
+                ><i class="fa fa-twitter"></i
+              ></a>
+
+              <!--Instagram-->
+              <a
+                class="btn text-white btn-lg btn-floating"
+                style="background-color: #125688;"
+                href="#"
+                role="button"
+                ><i class="fa fa-instagram"></i
+              ></a>
+
+              <!-- Linkedin -->
+              <a
+                class="btn text-white btn-lg btn-floating"
+                style="background-color: #0082ca;"
+                href="#"
+                role="button"
+                ><i class="fa fa-linkedin"></i
+              ></a>
+
+              <!-- YouTube -->
+              <a
+                class="btn text-white btn-lg btn-floating"
+                style="background-color: #FF0000;"
+                href="https://www.youtube.com/@mPowerGroups"
+                role="button"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+          
+          <section class="container page-section p-0">
+            <div class="container-fluid text-center text-lg-start text-md-start text-sm-start">
+              <!-- Grid row -->
+              <div class="row mt-4">
+                <!-- Grid column -->
+                <div class="col-md-3 text-center">
+                  <!-- Content -->
+                  <img src="images/logo.png" alt="mpower_logo">
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 text-center">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    Let's Talk
+                  </h6>
+                  <div class="row d-flex justify-content-center">
+                    <a id="popupWidget" class="" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/teamfivetest123'});return false;">
+                      <div class="scheduletext" style="text-align: center;">
+                        <p id="popupText">Schedule a Call</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-3 text-center">
+                  <!-- Links -->
+                  <h6 class="footer-subtitles text-uppercase fw-bold mb-4">
+                    Site Map
+                  </h6>
+                  <p>
+                    <a href="index.html" class="text-white site-map">Home</a>
+                  </p>
+                  <p>
+                    <a href="about.html" class="text-white site-map">About Us</a>
+                  </p>
+                  <p>
+                    <a href="Service.html" class="text-white site-map">Services</a>
+                  </p>
+                  <p>
+                    <a href="contact.html" class="text-white site-map">Contact Us</a>
+                  </p>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-3 text-center">
+                  <!-- Links -->
+                  <h6 class="footer-subtitles text-uppercase fw-bold mb-4">Contact</h6>
+                  <p><i class="fa fa-home me-3 text-secondary"></i> 4040 Wilson Blvd, Arlington, VA 22203</p>
+                  <p>
+                    <address><i class="fa fa-envelope me-3 text-secondary"></i>
+                    <a href="contactus@mpowergroups.com">contactus@mpowergroups.com</a></address>
+                  </p>
+                  <p><i class="fa fa-phone me-3 text-secondary"></i> 703-658-9898</p>
+                </div>
+                <!-- Grid column -->
+              </div>
+              <!-- Grid row -->
+            </div>
+          </section>
+          <!-- Section: Copyright -->
+
+          <div class="row p-2 g-0" id="bottom-bar">
+            <div class="col-md-6 copyrightTxt">
+              <p>Copyright © 2023 mPower Groups</p>
+            </div>
+            <div class="col-md-6 copyrightTxt">
+              <p>Powered by mPower Groups</p>
+            </div>
+          </div>
+        </footer>
+
+        <!--Bootstrap Bundle-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    </body>
+</html>

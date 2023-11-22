@@ -1,0 +1,890 @@
+    /*GENERAL*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+html {
+    background-color: #141c27;
+}
+
+body {
+    background-color: #141c27;
+    margin:0;
+}
+
+    /*NAVIGATION*/
+#mainNav {
+    transition: top 0.3s;
+}
+
+#mainNav a:hover {
+    color:#db90e3;
+}
+
+.nav-item {
+    font-size: 20px;
+}
+
+    /*HEADER*/
+header {
+    display:block;
+}
+
+.hero-banner {
+    text-align: center;
+    color: #fff;
+    background: url(images/bg-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.otherPage-banners {
+    padding-top: 15rem;
+    padding-bottom: 10rem;
+    text-align: center;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+}
+
+#about-us-banner {
+    background: url(images/bg-2.jpg) center/cover no-repeat;
+}
+
+#service-banner {
+    background: url(images/bg-3.jpg) center/cover no-repeat;
+    
+    
+}
+
+#contact-us-banner {
+    background: url(images/bg-5.jpg) center/cover no-repeat;
+}
+
+
+
+.hero-banner h1 {
+    font-size: 2.5rem;
+}
+
+.hero-banner p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff5733;
+    color: #ffffff;
+    padding: 6px 6px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff8148;
+}
+
+#hero-heading {
+    font-size: 6rem;
+    /*border: 1px solid yellow;*/
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
+}
+#hero-subheading {
+    font-size: 4.5rem;
+    /*border: 1px solid red;*/
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 1024px) {
+    
+    
+}
+    
+@media screen and (min-width: 950px) {
+     
+    
+}
+    
+    
+@media screen and (min-width: 650px) {
+     
+    
+    
+}
+    
+@media screen and (min-width: 480px) {
+     
+    
+}
+
+@media (max-width: 768px) {
+    .hero-banner {
+      
+    }
+
+    #hero-heading {
+        font-size:5rem;
+    }
+
+    #hero-subheading {
+        font-size:3rem;
+    }
+}
+
+
+    /*PAGE SECTIONS*/
+
+section {
+    /*background-image: url(images/bg-003-free-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    background-color: #141c27;
+    color:white;
+}
+
+.page-section {
+    padding: 2rem 0;
+}
+
+.page-section h2.section-heading {
+    font-size: 2.5rem;
+    margin-top:0;
+    margin-bottom: 1rem;
+}
+
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.page-section h3.section-subheading {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.row {
+    margin-right:0;
+}
+.row>* {
+    padding-right: 0;
+}
+  
+  
+
+
+    /*ABOUT US*/
+    #about {
+        /*margin-top: -40px;*/ /* Adjust the value as needed */
+        max-width: 655px;
+      }
+    
+    #about-us-description {
+
+    }
+
+    
+
+    /*SERVICES*/
+
+    /*CASE STUDIES*/
+
+/*sayed. last updated on 10/02/2023. changed the width and height of carousel.*/
+/* Change background color of the carousel */
+#carouselExampleIndicators {
+    background-color: #2c4f65;
+    min-height: 452px;
+    border-radius: 10px; /* Adjust the value to control the roundness */
+    margin-bottom: 20px; /* Add margin to create space between carousels */
+   }
+   #carouselExampleIndicators:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.7); /* Adjust the values for a milder glow on hover */
+}
+  /* Adjust the width of the custom carousel container */
+  .custom-carousel-container {
+    width: 40%;
+    
+    
+  }
+
+/* Change background color of the description box */
+  #imageDescription {
+    background-color: #2c4f65;
+    height: auto; /* Match the height of the images */
+    width: 100%; /* Match the width of the images */
+    padding: 15px; /* Add padding for spacing */
+    border-radius: 10px; /* Adjust the value to control the roundness */
+    font-size: 1.1em;
+    min-height: 452px; /* Set a minimum height */
+    margin-top: 1px; /* Add margin to create space between carousels */
+    
+  }
+  #imageDescription:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.7); /* Adjust glow effect on hover */
+}
+
+  .carousel-item{
+    height: 400px;
+  }
+  
+
+  .slide-up-description {
+    animation: slideUp 0.5s ease-in-out;
+  }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  /*sayed. last updated on 10/02/2023 changed the width and height of carousel.*/
+
+    /*FOOTER*/
+footer {
+    text-align: center;
+    background-color: #141c27;
+    border-top: 1px solid #2e2e2e;
+    
+}
+.footer-subtitles {
+  padding-top:10px;
+}
+
+.site-map {
+  text-decoration: none;
+}
+
+
+#bottom-bar {
+    color:white;
+}
+
+/*googleforms.*/
+.iframe-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Adjust this to control the height of the container */
+    background-color: #17202c; /* Optional background color */
+  }
+  
+  iframe {
+    min-width: 100%; /* Ensure the iframe doesn't exceed its container's width */
+    min-height: 100%; /* Ensure the iframe doesn't exceed its container's height */
+  }
+  /*googleforms.*/
+  
+  /*web3forms.*/
+  #myForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    min-width: 600px;
+    min-height: 500px;
+    margin: 0 auto;
+    background-color: gray;
+    
+}
+
+/* Center the specified form elements vertically */
+#myForm input[type="text"],
+#myForm input[type="email"],
+#myForm textarea,
+#myForm .h-captcha,
+#myForm button {
+    margin: 10px 0;
+}
+
+/* Style the form elements */
+#myForm input[type="text"],
+#myForm input[type="email"],
+#myForm textarea,
+#myForm button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+#myForm button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the captcha container */
+#myForm .h-captcha {
+    display: flex;
+    justify-content: center;
+}
+
+/* Add some spacing around the captcha */
+#myForm .h-captcha > div {
+    margin: 10px 0;
+}
+
+/* Style the success message */
+#myForm .w3-container.w3-green {
+    border: 1px solid #0a871b;
+    background-color: #0a871b;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+/*web3forms.*/
+
+/*contactustextpositioning*/
+
+
+
+
+/* Popup container */
+#popupWidget {
+    background-color: #3498db;
+    color: #fff;
+    padding: 6px 10px; /* Adjust padding as needed */
+    border-radius: 5px;
+    box-shadow: 0 4px 0 #2980b9;
+    transition: box-shadow 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+}
+
+#popupWidget:hover {
+    box-shadow: 0 2px 0 #2980b9;
+    transform: translateY(2px);
+}
+
+/* Popup text */
+#popupText {
+    margin: 0;
+}
+
+
+
+.copyrightTxt {
+    font-size:small;
+}
+
+#messenger-widget-b-container * {
+    all: initial;
+}
+
+.text-bigger {
+    font-family: "SuisseIntl",sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.46;
+}
+
+
+
+/*servicesstyling*/
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    justify-content: space-around;
+    align-items: stretch; /* Add this line to make containers the same height */
+  }
+
+  .service {
+    text-align: center;
+    flex: 0 0 auto; /* This will tell the browser to shrink the service containers to fit the available space, and then grow them back to their natural size if there is any extra space available. */
+    margin: 5px;
+    background-color: #2c4f65;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    max-width: 100%; /* Set maximum width to 100% */
+    max-height: 100%;
+    
+    }
+    .custom-size {
+        height: 97.5%;
+    }
+    
+    
+
+  .service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .service img {
+    max-width: 50%;
+    height: auto;
+    
+  }
+
+  h4, p {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  h4 {
+    font-size: 1.5em;
+    margin: 20px;
+    overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Adjust the number of lines to show */
+  -webkit-box-orient: vertical;
+  line-height: 1.4; /* Adjust line height as needed */
+ 
+    
+    
+    
+  }
+
+  .description {
+    font-size: 1.2em;
+    margin-top: 20px; /* Adjust the top margin to push the paragraphs upwards */
+    margin-bottom: 150px;
+    
+    
+  }
+  
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.7); /* Add a glow effect on hover */
+  }
+  /*servicesstyling*/
+
+
+/*learnmorebutton*/
+.learn-more-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 0 #2980b9;
+    transition: box-shadow 0.3s ease;
+    
+  }
+  
+  .learn-more-button:hover {
+    box-shadow: 0 2px 0 #2980b9;
+    transform: translateY(2px);
+  }
+/*learnmorebutton*/
+
+/*aboutuspagestyling*/
+.section-team {
+    margin: 160px auto 120px auto;
+    max-width: 1170px;
+}
+
+.section-team .team {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-right: -30px;
+}
+
+.section-team .member {
+    flex: 0 0 33.33333%;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.section-team .member .inside:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: #f2f2f2;
+}
+
+.section-team .member .inside {
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+.container-box {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    max-width: 800px; /* Optional: Set a max-width to prevent the containers from becoming too wide */
+    overflow: hidden; /* Hide the overflow to make the image fit the container */
+    
+}
+.container-box img {
+    max-width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+    border-radius: 0; /* Set border-radius to 0 to make the image rectangular */
+   
+}
+
+.container-box-1 {
+    background-color: #2c4f65; /* Container 1 background color (gold) */
+}
+
+.container-box-2 {
+    background-color: #2c4f65; /* Container 2 background color (light green) */
+}
+
+.container-box-3 {
+    background-color: #2c4f65; /* Container 3 background color (sky blue) */
+}
+.container-box p strong {
+    font-size: 20px; /* Adjust the font size as needed */
+}
+/*aboutuspagestyling*/
+
+
+
+
+
+/*servicespage*/
+/* Add your CSS styles here */
+.kiwi-container {
+    /* Add your styles for the container */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+  
+  .kiwi-container .kiwi {
+    text-align: center;
+    flex: 0 0 auto;
+    margin: 5px;
+    background-color: #2c4f65; /* Change the background color as needed */
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  
+   
+    
+
+
+
+  
+  .kiwi-container .custom-size {
+    height: 97.5%;
+  }
+  
+  .kiwi-container .kiwi:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .kiwi-container .kiwi img {
+    max-width: 50%;
+    height: auto;
+  }
+  
+  .kiwi-container h4, .kiwi-container p {
+    margin: 0;
+    max-width: 100%;
+  }
+  
+  .kiwi-container h4 {
+    font-size: 1.5em;
+    margin: 20px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-height: 1.4;
+  }
+
+ 
+  .kiwi-container .kiwi-title-cloud {
+    margin: 20px;
+  }
+  
+  .kiwi-container .kiwi-description-cloud {
+    margin-bottom: 163px;
+    font-size: 1.2em;
+  }
+
+  .kiwi-container .kiwi-title-intelligent {
+    margin: 20px;
+    
+  }
+  
+  .kiwi-container .kiwi-description-intelligent {
+    margin-bottom: 134px;
+    font-size: 1.2em;
+  }
+
+  .kiwi-container .kiwi-title-application {
+    margin: 20px;
+    margin-bottom: 11px;
+  }
+  
+  .kiwi-container .kiwi-description-application {
+    margin-bottom: 134px;
+    font-size: 1.2em;
+  }
+
+  .kiwi-container .kiwi-title-management {
+    margin: 20px;
+    margin-bottom: 50px;
+    
+  }
+  
+  .kiwi-container .kiwi-description-management {
+    font-size: 1.2em;
+    margin-bottom: 210px;
+  }
+
+  .kiwi-container .kiwi-title-business {
+    margin: 20px;
+    margin-bottom: 10px;
+
+  }
+  
+  .kiwi-container .kiwi-description-business {
+    margin-bottom: -20px;
+    font-size: 1.2em;
+    
+  }
+
+  .kiwi-container .kiwi-title-cyber {
+    margin: 20px;
+    margin-bottom: 30px;
+    
+
+  }
+  
+  .kiwi-container .kiwi-description-cyber {
+    font-size: 1.2em;
+    margin-bottom: 270px;
+    
+  }
+  
+ 
+  
+  
+  
+  .kiwi-container .kiwi-description {
+    font-size: 1.2em;
+    margin-top: 20px; /* Adjust the top margin to push the paragraphs upwards */
+    margin-bottom: 150px;
+  }
+  
+  .kiwi-container .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .kiwi-container .kiwi:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+  }
+/*servicespage*/
+
+/*letstalkextraspace*/
+.custom-section {
+  margin-bottom: -1px; /* Adjust as needed */
+}
+/*letstalkextraspace*/
+
+
+/*chatbotsize*/
+#chatbotFrameContainer {
+  position: fixed;
+    bottom: 20px; /* Adjust the distance from the bottom as needed */
+    right: 20px; /* Adjust the distance from the right as needed */
+    z-index: 1000; /* Ensure it's above other elements */
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    
+}
+
+#chatbotFrame {
+    width: 100%;
+    height: 500px;
+}
+/*chatbotsize*/
+
+
+
+
+/*aboutuspage*/
+.leader {
+  text-align: center;
+  flex: 0 0 auto;
+  margin: 5px;
+  background-color: #2c4f65;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.leader:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.leader img {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+    border-radius: 50%;
+  
+}
+
+h4, p {
+  margin: 0;
+  max-width: 100%;
+}
+
+h4 {
+  font-size: 1.5em;
+  margin: 20px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-height: 1.4;
+}
+
+.description {
+  font-size: 1.2em;
+  margin-top: 20px;
+  
+}
+
+.leader:hover {
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+}
+
+.leadership-container .leadership-title-leader1 {
+  margin: 20px;
+  
+  
+}
+
+.leadership-container .leadership-description-leader1 {
+  margin-bottom: 350px;
+  font-size: 1.2em;
+}
+
+.leadership-container .leadership-title-leader2 {
+  margin: 20px;
+  
+  
+}
+
+.leadership-container .leadership-description-leader2 {
+  margin-bottom: 90px;
+  font-size: 1.2em;
+}
+
+.row {
+  justify-content: center;
+}
+
+
+
+
+
+/*aboutuspage*/
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+  
+  
+  
+
+
+
